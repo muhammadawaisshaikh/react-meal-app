@@ -31,6 +31,8 @@ const Favorites = () => {
           </div>
         </div>
       ))}
+
+      { !favourites.length && <img className='no-data' src='https://shorturl.at/vNOS5' alt='No Data!' /> }
     </div>
   );
 };

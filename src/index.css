@@ -40,3 +40,10 @@ a:hover {
 .active {
   font-weight: bold;
 }
+
+.no-data {
+  width: 500px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
