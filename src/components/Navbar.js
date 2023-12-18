@@ -7,9 +7,9 @@ const Navbar = () => {
     <nav className='mb-4'>
       <ul>
         {
-          routes.map((route) => {
+          routes.map((route, index) => {
             return (
-              <li className='mt-2'>
+              <li className='mt-2' key={index}>
                 <NavLink className="text-decoration-none text-white" to={route.path} exact activeClassName="active">
                   {route.name}
                 </NavLink>
