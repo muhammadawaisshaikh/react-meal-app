@@ -1,16 +1,15 @@
 import React, { useEffect } from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { removeFromFavourites } from '../state/slices/favouriteSlice';
 
 const Favorites = () => {
   const favourites = useSelector((state) => state.favourites.value);
 
-  useEffect(() => {
-    console.log(favourites);
-  }, [favourites])
+  const dispatch = useDispatch();
 
   const handleRemoveFavorite = (meal) => {
     console.log('Meal removed from favorite:', meal);
+    dispatch(removeFromFavourites(meal));
   };
 
   return (
@@ -26,7 +25,7 @@ const Favorites = () => {
               <div class="card-body">
                 <h5 class="card-title">{meal.strMeal}</h5>
                 <p class="card-text">Meal ID: {meal.idMeal}</p>
-                <a onClick={() => removeFromFavourites(meal)} class="btn btn-danger">Remove Favorite</a>
+                <a onClick={() => handleRemoveFavorite(meal)} class="btn btn-danger">Remove Favorite</a>
               </div>
             </div>
           </div>

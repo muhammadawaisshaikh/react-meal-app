@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { API_BASE_URL } from '../core/config';
 import { useDispatch } from 'react-redux';
-import { addToFavourites, removeFromFavourites } from '../state/slices/favouriteSlice';
+import { addToFavourites } from '../state/slices/favouriteSlice';
 
 const MealGenerator = () => {
   const [meal, setMeal] = useState(null);

@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { API_BASE_URL } from '../core/config';
-import { addToFavourites, removeFromFavourites } from '../state/slices/favouriteSlice';
+import { addToFavourites } from '../state/slices/favouriteSlice';
 
 const Meals = () => {
   const navigate = useNavigate();
