@@ -1,35 +1,22 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { routes } from '../AppRouter';
 
 const Navbar = () => {
   return (
     <nav>
       <ul>
-        <li>
-          <NavLink to="/" exact activeClassName="active">
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/about">
-            About Me
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/menu">
-            Menu
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/favorites">
-            My Favorites
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/meal-generator">
-            Meal Generator
-          </NavLink>
-        </li>
+        {
+          routes.map((route) => {
+            return (
+              <li>
+                <NavLink to={route.path} exact activeClassName="active">
+                  {route.name}
+                </NavLink>
+              </li>
+            );
+          })
+        }
       </ul>
     </nav>
   );
