@@ -13,6 +13,7 @@ export const routes = [
   { path: '/', name: 'Home', component: <Home /> },
   { path: '/about', name: 'About Me', component: <AboutMe /> },
   { path: '/menu', name: 'Menu', component: <Menu /> },
+  { path: '/meals', name: 'Meals', component: <Meals /> },
   { path: '/favorites', name: 'My Favorites', component: <Favorites /> },
   { path: '/meal-generator', name: 'Meal Generator', component: <MealGenerator /> },
 ];

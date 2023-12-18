@@ -36,7 +36,7 @@ const MealGenerator = () => {
               <div class="card-body">
               <h5 class="card-title">{meal.strMeal}</h5>
                 <p class="card-text">{meal.strInstructions}</p>
-              <a onClick={handleFavorite} class="btn btn-primary">Mark as Favorite</a>
+                <a onClick={handleFavorite} class="btn btn-primary">Mark as Favorite</a>
               </div>
             </div>
           </div>
