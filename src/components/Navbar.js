@@ -4,13 +4,13 @@ import { routes } from '../AppRouter';
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className='mb-4'>
       <ul>
         {
           routes.map((route) => {
             return (
-              <li>
-                <NavLink to={route.path} exact activeClassName="active">
+              <li className='mt-2'>
+                <NavLink className="text-decoration-none text-white" to={route.path} exact activeClassName="active">
                   {route.name}
                 </NavLink>
               </li>

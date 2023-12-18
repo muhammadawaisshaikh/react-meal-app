@@ -21,12 +21,12 @@ const Menu = () => {
 
   return (
     <div>
-      <h2>Menu</h2>
-      <ul>
-        {categories.map((category) => (
-          <li key={category.idCategory}>{category.strCategory}</li>
-        ))}
-      </ul>
+      <h2 className='text-center'>Menu</h2>
+      {categories.map((category) => (
+        <div className='card p-3 m-3' key={category.idCategory}>
+          {category.strCategory}
+        </div>
+      ))}
     </div>
   );
 };
