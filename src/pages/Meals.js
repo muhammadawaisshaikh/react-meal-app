@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { API_BASE_URL } from '../core/config';
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
@@ -16,9 +17,8 @@ const Meals = () => {
 
     const fetchMeals = async () => {
       try {
-        const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category?.strCategory}`);
+        const response = await axios.get(`${API_BASE_URL}/1/filter.php?c=${category?.strCategory}`);
         setMeals(response.data.meals);
-        console.log(response.data.meals);
       } catch (error) {
         console.error('Error fetching meals:', error);
       }
