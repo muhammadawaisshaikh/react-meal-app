@@ -5,14 +5,15 @@ const initialState = {
 };
 
 export const favouritesSlice = createSlice({
-  name: 'message',
+  name: 'favourites',
   initialState,
   reducers: {
     addToFavourites: (state, action) => {
       state.value = [...state.value, action.payload];
     },
-    removeFromFavourites: (state) => {
-      state.value = [];
+    removeFromFavourites: (state, action) => {
+        console.log(action.payload);
+      state.value = state.value.filter(obj => obj.idMeal !== action.payload.idMeal);
     },
   },
 });

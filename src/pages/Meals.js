@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { API_BASE_URL } from '../core/config';
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { API_BASE_URL } from '../core/config';
+import { addToFavourites, removeFromFavourites } from '../state/slices/favouriteSlice';
 
 const Meals = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const dispatch = useDispatch();
+
   const [category, setCategory] = useState(location?.state?.category);
   const [meals, setMeals] = useState([]);
 
@@ -29,6 +33,7 @@ const Meals = () => {
 
   const handleFavorite = (meal) => {
     console.log('Meal marked as favorite:', meal);
+    dispatch(addToFavourites(meal));
   };
 
   return (
