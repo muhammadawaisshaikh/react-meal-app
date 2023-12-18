@@ -27,7 +27,7 @@ const MealGenerator = () => {
       <h1 className='text-center'>Random Meal Generator</h1>
 
       {meal && (
-        <div class="card m-5">
+        <div class="card mt-5">
           <div class="row g-0">
             <div class="col-md-4">
               <img src={meal.strMealThumb} alt={meal.strMeal} class="img-fluid rounded-start" />

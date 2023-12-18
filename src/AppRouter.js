@@ -21,16 +21,19 @@ const AppRouter = () => {
   return (
     <Router>
       <Navbar />
-      <Routes>
-        
-        {
-          routes.map((route) => {
-            return (
-              <Route path={route.path} exact element={route.component} />
-            );
-          })
-        }
-      </Routes>
+
+      <div className='container'>
+        <Routes>
+
+          {
+            routes.map((route) => {
+              return (
+                <Route path={route.path} exact element={route.component} />
+              );
+            })
+          }
+        </Routes>
+      </div>
     </Router>
   );
 };
