@@ -1,4 +1,5 @@
-# Meal/Restaurant React + Redux App ♥️ 
+# AI Meal/Restaurant App 
+### Built with ❤️ using ReactJS + Redux + Google Gemini
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -8,6 +9,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Redux Toolkit:
 https://dev.to/muhammadawaisshaikh/streamlining-state-management-with-redux-toolkit-3nac
+
+## Google AI - Gemini
+https://deepmind.google/technologies/gemini/
 
 ## Available Scripts
 
