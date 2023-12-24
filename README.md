@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+# Meal/Restaurant React + Redux App ♥️ 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+<img width="1440" alt="Screenshot 2023-12-19 at 4 20 23 AM" src="https://github.com/muhammadawaisshaikh/react-meal-app/assets/24633059/065c178f-f3e7-4aff-b3a1-416112934039">
+<img width="1440" alt="Screenshot 2023-12-19 at 4 20 43 AM" src="https://github.com/muhammadawaisshaikh/react-meal-app/assets/24633059/6fe4d63d-a8cb-4888-8499-5d7bdd107d16">
+<img width="1440" alt="Screenshot 2023-12-19 at 4 21 12 AM" src="https://github.com/muhammadawaisshaikh/react-meal-app/assets/24633059/57a68b73-f342-4d7f-829c-37b76b29fa38">
+
+## Redux Toolkit:
+https://dev.to/muhammadawaisshaikh/streamlining-state-management-with-redux-toolkit-3nac
 
 ## Available Scripts
 
