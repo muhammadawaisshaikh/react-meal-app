@@ -47,3 +47,15 @@ a:hover {
   display: block;
   margin: auto;
 }
+
+input {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+button {
+  border: 0;
+  padding: 10px 30px;
+  background: #333333;
+  color: white;
+}
