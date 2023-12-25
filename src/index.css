@@ -51,6 +51,7 @@ a:hover {
 input {
   width: 100%;
   padding: 10px 20px;
+  border: 1px solid;
 }
 
 button {
@@ -58,4 +59,9 @@ button {
   padding: 10px 30px;
   background: #333333;
   color: white;
+}
+
+.aiWithActive {
+  background: greenyellow;
+  color: #333333;
 }
