@@ -8,6 +8,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <img width="1440" alt="Screenshot 2023-12-19 at 4 20 43 AM" src="https://github.com/muhammadawaisshaikh/react-meal-app/assets/24633059/6fe4d63d-a8cb-4888-8499-5d7bdd107d16">
 <img width="1440" alt="Screenshot 2023-12-19 at 4 21 12 AM" src="https://github.com/muhammadawaisshaikh/react-meal-app/assets/24633059/57a68b73-f342-4d7f-829c-37b76b29fa38">
 
+## Google AI Gemini API in web using React 🤖 - [Step by Step - Medium Blog](https://generativeai.pub/google-gemini-api-in-web-using-react-7e5bf0bf0abc)
+## Google AI Gemini Image Input API in Web using React 🤖- [Step by Step - Medium Blog](https://generativeai.pub/google-ai-gemini-image-input-api-in-web-using-react-part-2-cfb1b621a7bb)
+
 ## Redux Toolkit:
 https://dev.to/muhammadawaisshaikh/streamlining-state-management-with-redux-toolkit-3nac
 
