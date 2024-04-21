@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { getBase64 } from '../helpers/imageHelper';
+import { GEMINI_API_KEY } from '../core/config';
 
 const AiwithImage = () => {
-    const genAI = new GoogleGenerativeAI('AIzaSyDtiBA7Z3cIgjqzSktQUm0zGj3uQBAWuso');
+    const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 
     const [image, setImage] = useState('');
     const [imageInineData, setImageInlineData] = useState('');
