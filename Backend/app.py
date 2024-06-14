@@ -26,6 +26,7 @@ model = genai.GenerativeModel('gemini-1.0-pro-latest')
 def home():
     return 'Welcome to Gemini Python Rest Api'
 
+# API Endpoint to generate content from text prompt
 @app.route('/generate', methods=['POST'])
 def generate_content():
     data = request.json
@@ -38,6 +39,7 @@ def generate_content():
     response = model.generate_content(prompt)
     return jsonify({'text': response.text})
 
+# API Endpoint to generate content from text, Image prompt
 @app.route('/generate-from-image', methods=['POST'])
 def generate_content_from_image():
     data = request.json
