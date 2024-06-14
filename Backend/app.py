@@ -21,6 +21,10 @@ genai.configure(api_key=api_key)
 # configure Gemini Model
 model = genai.GenerativeModel('gemini-1.0-pro-latest')
 
+@app.route('/', methods=['GET'])
+def home():
+    return 'Welcome to Gemini Python Rest Api'
+
 @app.route('/generate', methods=['POST'])
 def generate_content():
     data = request.json
