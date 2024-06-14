@@ -1,5 +1,8 @@
 # Gen Ai Powered API using Python
 
+![Generate From Text Prompt](./demo-img/image.png)
+![Generate From Image, Text Prompt](./demo-img/image-1.png)
+
 ## Google AI Python SDK for the Gemini API
 https://github.com/google-gemini/generative-ai-python
 

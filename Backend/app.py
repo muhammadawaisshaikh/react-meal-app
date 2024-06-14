@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
 import os
+import pathlib
 import google.generativeai as genai
 
 # init Flask
@@ -35,6 +36,18 @@ def generate_content():
 
     # calling Gemini Model here to get response against the text prompt
     response = model.generate_content(prompt)
+    return jsonify({'text': response.text})
+
+@app.route('/generate-from-image', methods=['POST'])
+def generate_content_from_image():
+    data = request.json
+    prompt = data.get('prompt')
+    image_url = data.get('image_url')
+
+    if not prompt:
+        return jsonify({'error': 'Prompt is required'}), 400
+
+    response = model.generate_content([prompt, image_url])
     return jsonify({'text': response.text})
 
 if __name__ == '__main__':
